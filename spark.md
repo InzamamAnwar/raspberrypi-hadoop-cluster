@@ -61,6 +61,10 @@ Spark installation is complete. Let's run an axample provided with
 following command on `name-node`
 
 ```shell script
+# run spark history server
+> $SPARK_HOME/sbin/start-history-server.sh
+
+# run spark job
 > spark-submit --deploy-mode cluster \
   --class org.apache.spark.examples.SparkPi \
   /home/hadoop/spark/examples/jars/spark-examples_2.11-2.4.5.jar 10
